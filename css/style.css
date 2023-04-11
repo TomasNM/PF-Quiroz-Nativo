@@ -9,10 +9,14 @@ a{text-decoration:none;transition: 1s all;}
 .white{color:white}
 .p20{padding: 20px;}
 .m20{margin:20px;}
-.centerTxt{text-align: center; color: white;}
+.mb20{margin-bottom: 20px;}
+.centerTxt{text-align: center; color: white; background-color: #161616;}
 body{margin:0;padding:0;}
 .m0{margin: 0; padding: 0;}
 .mtop20{margin-top: 20px;}
+.bg-gray{background-color: gray; padding: 20px;
+border-radius: 20px;}
+.gridMainProductos div{display: flex; flex-direction: column; align-items: center;}
 a:hover{
     color:black;
     background-color: white;
@@ -22,12 +26,11 @@ a:hover{
 a:active{
     background-color:gray
 }
-main div:nth-child(2){background-color: #161616;}
 /* MEDIA QUERIES */
 /* DESKTOP */
 @media (min-width:1024px){
     /* GRID INDEX */
-    .gridindex{
+    .grid{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto auto auto;
@@ -54,6 +57,21 @@ main div:nth-child(2){background-color: #161616;}
     .logoHeader{padding-left: 100px;}
     nav{padding-right: 100px;}
     main{gap: 20px;}
+    /* GRID PRODUCTOS */
+    .gridMainProductos{
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "prodA prodB prodC prodD";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        justify-content: flex-end;
+    }
+    .tituloProdu{grid-area: titulo;}
+    .proyA{grid-area: prodA;}
+    .proyB{grid-area: prodB;}
+    .proyC{grid-area: prodC;}
+    .proyD{grid-area: prodD;}
 }
 /* TABLET */
 @media (min-width:769px) and (max-width:1023px){
