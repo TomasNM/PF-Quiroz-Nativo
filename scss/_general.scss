@@ -4,16 +4,11 @@ header a{text-decoration:none;transition: 1s all;}
 .img-fluid{width:100%;height: 100%;}
 .bg-color{background-color: #161616;}
 .white{color:white}
-.p20{padding: 20px;}
-.m20{margin:20px;}
-.mb20{margin-bottom: 20px;}
 .centerTxt{text-align: center;}
 body{margin:0;padding:0;}
-.m0{margin: 0; padding: 0;}
-.mtop20{margin-top: 20px;}
 .bg-gray{background-color: gray; padding: 20px;
 border-radius: 20px;}
-.gridMainProductos div{display: flex; flex-direction: column; align-items: center;}
+.gridMainProductos div{display: flex; flex-direction: column;}
 @font-face {
     font-family: "Lato";
     src: url(../fonts/Lato-Black.ttf);
@@ -27,3 +22,6 @@ border-radius: 20px;}
 .fontLR{font-family: "Lato-Regular";}
 .m-0{margin: 0px;}
 .p-0{padding: 0px;}
+.img-border{border-radius: 15px 15px 0px 0px;}
+.button{width: 40%;height: auto; background-color: #161616; color: white;border-radius: 5px; border-color: #000000;}
+.button:hover{background-color: white;color: black;transition: 1s all;}

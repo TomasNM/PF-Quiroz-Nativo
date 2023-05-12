@@ -23,3 +23,8 @@
         margin: 10px* $m;
     }
 }
+@for $pr from 1 through 5{
+    .pr-#{$pr}{
+        padding-right: 10px* $pr;
+    }
+}
