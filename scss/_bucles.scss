@@ -1,5 +1,25 @@
 @for $i from 1 through 50{
-    p-#{$i}{
+    .p-#{$i}{
         padding: 10px* $i;
+    }
+}
+@for $a from 1 through 5{
+    .pl-#{$a}{
+        padding-left: 10px* $a;
+    }
+}
+@for $pt from 1 through 5{
+    .pt-#{$pt}{
+        padding-top: 10px* $pt;
+    }
+}
+@for $pb from 1 through 5{
+    .pb-#{$pb}{
+        padding-bottom: 10px* $pb;
+    }
+}
+@for $m from 1 through 5{
+    .m-#{$m}{
+        margin: 10px* $m;
     }
 }

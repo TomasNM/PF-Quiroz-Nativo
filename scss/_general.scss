@@ -1,17 +1,29 @@
 /* GENERAL */
-*{font-family: Arial, Helvetica, sans-serif;}
 ul{list-style-type: none;}
-a{text-decoration:none;transition: 1s all;}
-.img-fluid{width:100%;height: auto;}
+header a{text-decoration:none;transition: 1s all;}
+.img-fluid{width:100%;height: 100%;}
 .bg-color{background-color: #161616;}
 .white{color:white}
 .p20{padding: 20px;}
 .m20{margin:20px;}
 .mb20{margin-bottom: 20px;}
-.centerTxt{text-align: center; color: white; background-color: #161616;}
+.centerTxt{text-align: center;}
 body{margin:0;padding:0;}
 .m0{margin: 0; padding: 0;}
 .mtop20{margin-top: 20px;}
 .bg-gray{background-color: gray; padding: 20px;
 border-radius: 20px;}
 .gridMainProductos div{display: flex; flex-direction: column; align-items: center;}
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Black.ttf);
+}
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(../fonts/Lato-Regular.ttf);
+  }
+*{font-family: "Lato";}
+.centerImg{display: block;margin-left: auto;margin-right: auto;}
+.fontLR{font-family: "Lato-Regular";}
+.m-0{margin: 0px;}
+.p-0{padding: 0px;}

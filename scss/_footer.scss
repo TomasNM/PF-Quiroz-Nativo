@@ -1,1 +1,9 @@
-.logoFooter{width: 20%;height: auto;}
+@media(min-width:1024px){
+    .logoFooter{width: 40%;height: auto;}
+}
+@media(max-width:768px){
+    .logoFooter{width: 60%;height: auto;}
+
+}
+.instagram{width: 20%;height: auto;}
+.facebook{width: 20%;height: auto;}
