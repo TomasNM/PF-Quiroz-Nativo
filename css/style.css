@@ -101,6 +101,17 @@ body {
   transition: 1s all;
 }
 
+.logoNosotros {
+  width: 40%;
+  height: auto;
+  margin-left: 550px;
+  padding-top: 20px;
+}
+
+.pr-400 {
+  padding-right: 400px;
+}
+
 .logoHeader {
   width: 20%;
   height: auto;
@@ -212,6 +223,25 @@ li a {
   }
   .contacto {
     grid-area: contacto;
+  }
+  .gridMainNosotros {
+    display: grid;
+    grid-template-areas: "nosotros1 nosotros1" "titulo titulo" "logo1 texto1" "contacto1 contacto1";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
+  }
+  .gridMainNosotros .nosotros1 {
+    grid-area: nosotros1;
+  }
+  .gridMainNosotros .titulo {
+    grid-area: titulo;
+  }
+  .gridMainNosotros .logo1 {
+    grid-area: logo1;
+  }
+  .gridMainNosotros .contacto1 {
+    grid-area: contacto1;
   }
 }
 /* TABLET */

@@ -62,6 +62,22 @@
     .proyC{grid-area: prodC;}
     .proyD{grid-area: prodD;}
     .contacto{grid-area: contacto;}
+    // GRID NOSOTROS
+    .gridMainNosotros{
+        display: grid;
+        grid-template-areas:
+        "nosotros1 nosotros1"
+        "titulo titulo"
+        "logo1 texto1"
+        "contacto1 contacto1";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        justify-content: center;
+        .nosotros1{grid-area: nosotros1;}
+        .titulo{grid-area: titulo;}
+        .logo1{grid-area: logo1;}
+        .contacto1{grid-area: contacto1;}
+    }
 }
 /* TABLET */
 @media (min-width:769px) and (max-width:1023px){
