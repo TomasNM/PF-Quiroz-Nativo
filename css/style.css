@@ -101,17 +101,6 @@ body {
   transition: 1s all;
 }
 
-.logoNosotros {
-  width: 40%;
-  height: auto;
-  margin-left: 550px;
-  padding-top: 20px;
-}
-
-.pr-400 {
-  padding-right: 400px;
-}
-
 .logoHeader {
   width: 20%;
   height: auto;
@@ -243,6 +232,15 @@ li a {
   .gridMainNosotros .contacto1 {
     grid-area: contacto1;
   }
+  .logoNosotros {
+    width: 40%;
+    height: auto;
+    margin-left: 550px;
+    padding-top: 20px;
+  }
+  .pr-400 {
+    padding-right: 400px;
+  }
 }
 /* TABLET */
 /* MOBILE */
@@ -278,6 +276,17 @@ li a {
   .button {
     width: 50%;
     height: auto;
+  }
+  .logoNosotros {
+    width: 40%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .texto1 {
+    padding: 30px;
+    text-align: center;
   }
 }
 @media (min-width: 1024px) {

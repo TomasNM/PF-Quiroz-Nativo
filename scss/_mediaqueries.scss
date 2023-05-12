@@ -78,6 +78,8 @@
         .logo1{grid-area: logo1;}
         .contacto1{grid-area: contacto1;}
     }
+    .logoNosotros{width: 40%;height: auto; margin-left: 550px; padding-top: 20px;}
+    .pr-400{padding-right: 400px;}
 }
 /* TABLET */
 @media (min-width:769px) and (max-width:1023px){
@@ -94,4 +96,6 @@
     body{overflow-x: hidden;}
     li a{font-size: 13px;}
     .button{width: 50%;height: auto;}
+    .logoNosotros{width: 40%;height: auto; margin-left: auto;margin-right: auto;display: block;}
+    .texto1{padding: 30px; text-align: center;}
 }
