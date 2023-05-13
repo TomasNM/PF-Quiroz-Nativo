@@ -80,6 +80,44 @@
     }
     .logoNosotros{width: 40%;height: auto; margin-left: 550px; padding-top: 20px;}
     .pr-400{padding-right: 400px;}
+    // GRID SERVICIOS
+    .gridMainServicios{
+        display: grid;
+        grid-template-areas: 
+        "servicios servicios servicios"
+        "tituloServ tituloServ tituloServ"
+        "planificacion construccion post-venta";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        justify-content: center;
+        .servicios{grid-area: servicios;}
+        .tituloServ{grid-area: tituloServ;}
+        .planificacion{grid-area: planificacion;}
+        .construccion{grid-area: construccion;}
+        .post-venta{grid-area: post-venta;}
+
+    }
+    // GRID CONTACTO
+    .gridMainContacto{
+        display: grid;
+        grid-template-areas: 
+        "contacto contacto"
+        "textoContacto form"
+        "dondeEstamos dondeEstamos"
+        "maps textoContacto2";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        justify-content: center;
+        .contacto{grid-area: contacto;}
+        .textoContacto{grid-area: textoContacto;}
+        .form{grid-area: form;}
+        .dondeEstamos{grid-area: dondeEstamos;}
+        .maps{grid-area: maps;}
+        .textoContacto2{grid-area: textoContacto2;}
+    }
+    .txtContacto{padding-left: 400px;}
+    .imgContacto{width: 30%;padding-left: 470px;filter: contrast(0);}
+    .prForm{padding-right: 700px;}
 }
 /* TABLET */
 @media (min-width:769px) and (max-width:1023px){
@@ -98,4 +136,6 @@
     .button{width: 50%;height: auto;}
     .logoNosotros{width: 40%;height: auto; margin-left: auto;margin-right: auto;display: block;}
     .texto1{padding: 30px; text-align: center;}
+    .textoContacto{padding: 20px;}
+    .imgContacto{width: 60%;filter: contrast(0);margin-left: auto;margin-right: auto;display: block;}
 }

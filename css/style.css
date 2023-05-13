@@ -21,7 +21,7 @@ header a {
 
 .img-fluid {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .bg-color {
@@ -99,6 +99,46 @@ body {
   background-color: white;
   color: black;
   transition: 1s all;
+}
+
+.textarea {
+  resize: none;
+}
+
+.button1 {
+  background-color: #161616;
+  color: white;
+  border-radius: 5px;
+  border-color: #000000;
+}
+
+.button1:hover {
+  background-color: white;
+  color: black;
+  transition: 1s all;
+}
+
+.gridForm {
+  display: grid;
+  grid-template-areas: "nombre telefono" "email email" "consulta consulta" "boton1 boton1";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  justify-content: center;
+}
+.gridForm .nombre {
+  grid-area: nombre;
+}
+.gridForm .telefono {
+  grid-area: telefono;
+}
+.gridForm .email {
+  grid-area: email;
+}
+.gridForm .consulta {
+  grid-area: consulta;
+}
+.gridForm .boton1 {
+  grid-area: boton1;
 }
 
 .logoHeader {
@@ -241,6 +281,64 @@ li a {
   .pr-400 {
     padding-right: 400px;
   }
+  .gridMainServicios {
+    display: grid;
+    grid-template-areas: "servicios servicios servicios" "tituloServ tituloServ tituloServ" "planificacion construccion post-venta";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+  }
+  .gridMainServicios .servicios {
+    grid-area: servicios;
+  }
+  .gridMainServicios .tituloServ {
+    grid-area: tituloServ;
+  }
+  .gridMainServicios .planificacion {
+    grid-area: planificacion;
+  }
+  .gridMainServicios .construccion {
+    grid-area: construccion;
+  }
+  .gridMainServicios .post-venta {
+    grid-area: post-venta;
+  }
+  .gridMainContacto {
+    display: grid;
+    grid-template-areas: "contacto contacto" "textoContacto form" "dondeEstamos dondeEstamos" "maps textoContacto2";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
+  }
+  .gridMainContacto .contacto {
+    grid-area: contacto;
+  }
+  .gridMainContacto .textoContacto {
+    grid-area: textoContacto;
+  }
+  .gridMainContacto .form {
+    grid-area: form;
+  }
+  .gridMainContacto .dondeEstamos {
+    grid-area: dondeEstamos;
+  }
+  .gridMainContacto .maps {
+    grid-area: maps;
+  }
+  .gridMainContacto .textoContacto2 {
+    grid-area: textoContacto2;
+  }
+  .txtContacto {
+    padding-left: 400px;
+  }
+  .imgContacto {
+    width: 30%;
+    padding-left: 470px;
+    filter: contrast(0);
+  }
+  .prForm {
+    padding-right: 700px;
+  }
 }
 /* TABLET */
 /* MOBILE */
@@ -287,6 +385,16 @@ li a {
   .texto1 {
     padding: 30px;
     text-align: center;
+  }
+  .textoContacto {
+    padding: 20px;
+  }
+  .imgContacto {
+    width: 60%;
+    filter: contrast(0);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 }
 @media (min-width: 1024px) {
